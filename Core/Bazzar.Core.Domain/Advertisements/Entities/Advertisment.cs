@@ -61,7 +61,7 @@ namespace Bazzar.Core.Domain.Advertisements.Entities
             });
         }
 
-        public void RequestToPublic()
+        public void RequestToPublish()
         {
             HandleEvent(new AdvertismentSentForReview()
             {

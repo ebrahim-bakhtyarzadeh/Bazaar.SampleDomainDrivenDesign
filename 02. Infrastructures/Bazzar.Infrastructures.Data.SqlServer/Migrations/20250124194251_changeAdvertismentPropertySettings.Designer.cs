@@ -4,6 +4,7 @@ using Bazzar.Infrastructures.Data.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bazzar.Infrastructures.Data.SqlServer.Migrations
 {
     [DbContext(typeof(AdvertismentDbContext))]
-    partial class AdvertismentDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250124194251_changeAdvertismentPropertySettings")]
+    partial class changeAdvertismentPropertySettings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
